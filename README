@@ -17,7 +17,7 @@ http://<my domain>/resources/<resource_name>.html - HTML description of the reso
 http://<my domain>/resources/<resource_name>.rdf - RDF description of the resource
 
 
-To run the application you will need to set up an empty MySQL database called 'conneg_development' with user 'root' and password 'admin'.
+To run the application you will need to set up an empty MySQL database called 'conneg_development' with user 'root' and password 'admin' or of course adapt the file config/database.yml to match your own choices for database name and account details.
 
 To check if it is working: 
 --------------------------
