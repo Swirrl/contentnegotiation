@@ -3,11 +3,11 @@ Ruby on Rails Linked Data content negotiation skeleton code.
 
 This is a complete (though very simple!) Ruby on Rails application (version 2.3.2). The only non-standard files are the following:
 
-- resources_controller.rb - This is the file that does the content negotiation, using the standard Rails 'respond_to' method.  
-- environment.rb - includes the definition of the application/rdf+xml MIME type
-- routes.rb - maps URLs of the form <domain>/resources/<id> to the 'show' action of 'resources_controller'
-- show.erb - to generate the HTML representation of a resource (dummy code only)
-- show.rxml - to generate the RDF representaiton of a resource (dummy code only)
+- app/controllers/resources_controller.rb - This is the file that actually does the content negotiation, using the standard Rails 'respond_to' method.    
+- config/environment.rb - includes the definition of the application/rdf+xml MIME type and maps it to the .rdf extension.
+- config/routes.rb - maps URLs of the form <domain>/resources/<id> to the 'show' action of 'resources_controller'
+- app/views/resources/show.erb - to generate the HTML representation of a resource (dummy code only)
+- app/views/resources/show.rxml - to generate the RDF representaiton of a resource (dummy code only)
 
 
 This example assumes the following approach to URIs:
