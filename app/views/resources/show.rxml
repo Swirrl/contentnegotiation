@@ -1,0 +1,15 @@
+#uses Builder::XmlMarkup
+# see http://api.rubyonrails.org/classes/Builder/XmlMarkup.html
+
+
+xml.instruct!
+xml.rdf(:RDF,"xmlns:rdf"=> 'http://www.w3.org/1999/02/22-rdf-syntax-ns#', 
+                    "xmlns:rdfs" => 'http://www.w3.org/2000/01/rdf-schema#',
+                    "xmlns:dc" => 'http://purl.org/dc/elements/1.1/') {
+# replace this with code to generate RDF for your resource:                    
+  xml.rdf(:Description, "rdf:about" => "http://example.com/resources/my_resource") {
+    xml.dc(:title, "bla")
+  }
+}
+
+
